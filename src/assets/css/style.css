@@ -16,6 +16,23 @@
 }
 body {
 	background-color: #93605c;
+	overflow: hidden;
+}
+
+.video {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	object-fit: cover; /* Ajusta o vídeo ao tamanho da tela */
+	z-index: -1; /* Mantém o vídeo atrás do conteúdo */
+}
+.video:last-of-type {
+	left: 50%;
+}
+.section__principal {
+	z-index: 1; /* Conteúdo sobre o vídeo */
 }
 footer {
 	height: 14vh;
@@ -27,10 +44,29 @@ footer {
 	background-color: #f4edc9;
 	height: 90vh;
 	font-family: 'Dancing Script', cursive;
-	font-size: 27px;
+	
 }
 
 p {
 	text-align: justify;
   hyphens: auto;
+}
+
+.typing-container p {
+	font-size: 27px;
+	overflow: hidden; /* Oculta o texto fora do contêiner */
+}
+
+.cursor {
+	display: inline-block;
+	width: 2px;
+	height: 24px;
+	background: black;
+	animation: blink 0.5s step-end infinite;
+}
+
+@keyframes blink {
+	50% {
+		 background: transparent;
+	}
 }
