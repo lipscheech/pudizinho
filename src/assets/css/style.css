@@ -1,0 +1,36 @@
+* {
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+.bg-transparent {
+	background-color: transparent !important;
+}
+
+.text-justify {
+	text-align: justify !important;
+}
+
+.card {
+	border: none !important;
+}
+body {
+	background-color: #93605c;
+}
+footer {
+	height: 14vh;
+}
+.section__principal {
+	height: 100vh;
+}
+.container {
+	background-color: #f4edc9;
+	height: 90vh;
+	font-family: 'Dancing Script', cursive;
+	font-size: 27px;
+}
+
+p {
+	text-align: justify;
+  hyphens: auto;
+}
