@@ -65,6 +65,10 @@ p {
 	animation: blink 0.5s step-end infinite;
 }
 
+audio {
+	display: none; /* Oculta o player de áudio */
+}
+
 @keyframes blink {
 	50% {
 		 background: transparent;
